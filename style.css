@@ -160,6 +160,9 @@ body {
 .event h1 {
   font-size: 18px;
   margin: 0px;
+  background: -webkit-linear-gradient(-120deg, #00c0c7, #ff009d);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
 }
 .card h2 {
   margin: 0px;
@@ -275,6 +278,9 @@ body {
 
 .modalCardWrapper h1 {
     margin-top: 41px;
+    background: -webkit-linear-gradient(-120deg, #00c0c7, #ff009d);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
 }
 .time {
   display: flex;
