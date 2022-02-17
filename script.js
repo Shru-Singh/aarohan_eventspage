@@ -15,7 +15,7 @@ for (var i = 0; i <4; i++) {
     });
 }
 
-const register = document.querySelectorAll(".register");
+const register = document.querySelectorAll(".know");
 
 
 for (var i = 0; i <register.length; i++) {
@@ -24,8 +24,6 @@ for (var i = 0; i <register.length; i++) {
     str1.addEventListener("click",() => {
         const div=document.querySelector(".modal");
         div.classList.add("modaldisplay");
-        const divcard=document.querySelector(".wrapper");
-        divcard.classList.add("carddisplay");
     });
 }
 
@@ -38,7 +36,5 @@ for (var i = 0; i <closes.length; i++) {
     str2.addEventListener("click",() => {
         const div=document.querySelector(".modal");
         div.classList.remove("modaldisplay");
-        const divcard=document.querySelector(".wrapper");
-        divcard.classList.remove("carddisplay");
     });
 }

@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=Outfit:wght@100;200;300;400;500;600;700;800;900&display=swap');
+
 * {
   box-sizing: border-box;
   margin: 0;
@@ -9,6 +11,9 @@ body {
   color: #fff;
   max-width: 1440px;
   margin: 0 auto;
+  position: relative;
+  z-index: 0;
+  font-family: 'Outfit', sans-serif;
 }
 
 #myVideo {
@@ -48,15 +53,16 @@ body {
   display: flex;
   width: 100%;
   justify-content: center;
+  margin: 30px auto;
+
 }
 
 .days h3 {
   margin: 10px;
 }
 .day {
-  width: 273px;
-  height: 83px;
-
+  width: 160px;
+  height: 43px;
   margin: 10px;
   margin-bottom: 0px;
   display: flex;
@@ -186,27 +192,32 @@ body {
 
 .modal {
   display: none;
-}
-.modaldisplay{
-  z-index: 100000;
-  display: flex;
   flex-wrap: wrap;
   justify-content: center;
   align-items: center;
-  width: 100vw;
-  height: 100vh;
-  backdrop-filter: blur(2px);
-}
-.blur {
+  overflow-x: hidden;
+  top: 0;
+  left: 0;
   backdrop-filter: blur(2px);
   background-color: rgba(32, 0, 15, 0.356);
+}
+.modaldisplay{
+  display: flex !important;
+  width: 100vw;
+  height: 100vh;
+  z-index: 100000;
+  position: fixed;
+}
+/* .blur {
+  backdrop-filter: blur(2px);
+
   z-index: -12;
   position: fixed;
   width: 100vw;
   height: 100vh;
   top: 0;
   left: 0;
-}
+} */
 .modalCard {
   background-color: rgba(73, 0, 61, 0.671);
   width: 1000px;
